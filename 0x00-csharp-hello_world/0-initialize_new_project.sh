@@ -5,6 +5,4 @@ if [!-d /0-new_project ];
 then
 cd 0-new_project
 dotnet new console
-dotnet build
-dotnet run
 fi;
