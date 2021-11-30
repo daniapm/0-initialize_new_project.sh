@@ -6,24 +6,14 @@ namespace _5_print_comb
 	{
 		static void Main(string[] args)
 		{
-			int firts = 0;
-			int last = 0;
-			for (firts = 0; firts <= 9; firts++)
+			for (int numbers = 0; numbers <= 99; numbers++)
 			{
-				for (last = 0; last <= 9; last++)
-				{
-					if (last == 9 && firts == 9)
-					{
-						Console.WriteLine($"{firts}{last}");
-					}
-					else
-					{
-						Console.Write($"{firts}{last}, ");
-					}
-
-				}
-
+				if (numbers != 99)
+					Console.Write("{0:D2}, ", numbers);
+				else
+					Console.WriteLine("{0:D2}", numbers);
 			}
+
 		}
 	}
 }
