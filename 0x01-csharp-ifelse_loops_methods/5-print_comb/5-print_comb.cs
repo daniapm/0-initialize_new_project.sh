@@ -14,7 +14,7 @@ namespace _5_print_comb
 				{
 					if (last == 9 && firts == 9)
 					{
-						Console.Write($"{firts}{last}");
+						Console.WriteLine($"{firts}{last}");
 					}
 					else
 					{
