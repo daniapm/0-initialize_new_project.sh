@@ -9,7 +9,6 @@ class Program
 		int last = Math.Abs(number % 10);
 		if (last > 5)
 		{
-			Console.WriteLine(last);
 			Console.WriteLine($"The last digit of {number} is {last} and is greater than 5");
 		}
 		else if (last == 0)
@@ -18,7 +17,6 @@ class Program
 		}
 		else if (last != 0 && last < 6)
 		{
-			Console.WriteLine(last);
 			Console.WriteLine($"The last digit of {number} is {last} and is less than 6 and not 0");
 		}
 	}
