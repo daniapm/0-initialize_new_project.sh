@@ -9,7 +9,8 @@ class Array
 			Console.WriteLine("Index out of range");
 			return array;
 		}
-		return array[index] = n;
+		array[index] = n;
+		return array;
 	}
 
 }
