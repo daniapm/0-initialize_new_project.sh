@@ -3,7 +3,7 @@ class Array
 {
 	public static int elementAt(int[] array, int index)
 	{
-		if (index < 0)
+		if (index < 0 || index > array.Length - 1)
 		{
 			Console.Write("Index out of range");
 			return -1;
