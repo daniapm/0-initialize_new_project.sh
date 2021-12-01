@@ -9,7 +9,7 @@ class Array
 			Console.WriteLine("Size cannot be negative");
 			return null;
 		}
-		int[] array1 = new int[size];
+		var array1 = new int[size];
 
 		if (size == 0)
 		{
