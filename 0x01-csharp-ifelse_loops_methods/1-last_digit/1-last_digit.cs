@@ -9,15 +9,15 @@ class Program
 		int last = Math.Abs(number % 10);
 		if (last > 5)
 		{
-			Console.Write($"The last digit of {number} is {last} and is greater than 5");
+			Console.WriteLine("The last digit of {0} is {1} and is greater than 5", number, last);
 		}
 		else if (last == 0)
 		{
-			Console.Write($"The last digit of {number} is {last} and is 0");
+			Console.WriteLine("The last digit of {0} is {1} and is 0", number, last);
 		}
-		else if (last != 0 && last < 6)
+		else
 		{
-			Console.Write($"The last digit of {number} is {last} and is less than 6 and not 0");
+			Console.WriteLine("The last digit of {0} is {1} and is less than 6 and not 0", number, last);
 		}
 	}
 }
