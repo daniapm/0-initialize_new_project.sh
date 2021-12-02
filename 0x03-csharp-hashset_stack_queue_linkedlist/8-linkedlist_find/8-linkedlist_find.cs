@@ -5,12 +5,13 @@ class LList
 	public static int FindNode(LinkedList<int> myLList, int value)
 	{
 		int valor = 0;
-		for (int element = 0; element < myLList.Count; element++)
+		foreach (int element in myLList)
 		{
 			if (element == value)
 			{
 				return (valor);
 			}
+			valor++;
 		}
 		return (-1);
 	}
