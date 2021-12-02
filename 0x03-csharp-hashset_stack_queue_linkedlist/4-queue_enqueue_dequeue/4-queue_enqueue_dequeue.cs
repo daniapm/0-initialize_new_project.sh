@@ -11,7 +11,7 @@ class MyQueue
 		}
 
 		Console.WriteLine($"Number of items: {aQueue.Count}");
-		Console.WriteLine($"Top item: {aQueue.Peek()}");
+		Console.WriteLine($"First item: {aQueue.Peek()}");
 		if (aQueue.Contains(search))
 		{
 			Console.WriteLine($"Queue contains \"{search}\": True");
