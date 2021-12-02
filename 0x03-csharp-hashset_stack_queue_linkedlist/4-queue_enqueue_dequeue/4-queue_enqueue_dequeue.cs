@@ -9,11 +9,8 @@ class MyQueue
 		{
 			Console.WriteLine("Stack is empty");
 		}
-		else
-		{
-			Console.WriteLine($"Number of items: {aQueue.Count}");
 
-		}
+		Console.WriteLine($"Number of items: {aQueue.Count}");
 		Console.WriteLine($"Top item: {aQueue.Peek()}");
 		if (aQueue.Contains(search))
 		{
