@@ -14,12 +14,12 @@ class MyQueue
 		Console.WriteLine($"Top item: {aQueue.Peek()}");
 		if (aQueue.Contains(search))
 		{
-			Console.WriteLine($"Stack contains \"{search}\": True");
+			Console.WriteLine($"Queue contains \"{search}\": True");
 			while (aQueue.Dequeue() != search) ;
 		}
 		else
 		{
-			Console.WriteLine($"Stack contains \"{search}\": False");
+			Console.WriteLine($"Queue contains \"{search}\": False");
 		}
 		aQueue.Enqueue(newItem);
 		return aQueue;
