@@ -4,8 +4,8 @@ class List
 {
 	public static List<int> DifferentElements(List<int> list1, List<int> list2)
 	{
-		List<int> total = list1.FindAll(i => !list2.Contains(i)).ToList();
-		List<int> total2 = list2.FindAll(i => !list1.Contains(i)).ToList();
+		List<int> total = list1.FindAll(element => list2.Contains(element));
+		List<int> total = list2.FindAll(element => list1.Contains(element));
 		total.AddRange(total2);
 		total.Sort();
 		return total;
