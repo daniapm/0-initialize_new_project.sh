@@ -20,6 +20,7 @@ class Array
 					Console.Write(" ");
 				}
 			}
+
 			Console.WriteLine();
 		}
 	}
