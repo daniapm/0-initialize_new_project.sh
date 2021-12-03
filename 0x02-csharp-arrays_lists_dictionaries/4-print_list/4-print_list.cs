@@ -13,7 +13,7 @@ class List
 		for (int i = 0; i < size; i++)
 		{
 			mylist.Add(i);
-			if (i == size)
+			if (i == size - 1)
 			{
 				Console.Write(i);
 			}
