@@ -11,7 +11,7 @@ class LList
 		{
 			return;
 		}
-		for (int i = 1; i < index; i++)
+		for (int i = 0; i < index; i++)
 		{
 			dummy = dummy.Next;
 		}
