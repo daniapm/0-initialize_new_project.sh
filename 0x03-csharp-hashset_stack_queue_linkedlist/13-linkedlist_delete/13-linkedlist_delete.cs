@@ -7,15 +7,15 @@ class LList
 	{
 		LinkedListNode<int> dummy = myLList.First;
 
-		if (index < myLList.Count || index > 0)
+		if (index >= myLList.Count || index < 0)
 		{
-			for (int i = 1; i < index; i++)
-			{
-				dummy = dummy.Next;
-			}
-			myLList.Remove(dummy);
-
+			return;
 		}
-		return;
+		for (int i = 1; i < index; i++)
+		{
+			dummy = dummy.Next;
+		}
+		myLList.Remove(dummy);
+
 	}
 }
