@@ -10,8 +10,6 @@ class LList
 			suma = suma + item;
 
 		}
-		suma++;
-
 		return suma;
 	}
 
