@@ -16,5 +16,6 @@ class LList
 			myLList.Remove(dummy);
 
 		}
+		return;
 	}
 }
