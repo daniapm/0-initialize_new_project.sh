@@ -17,14 +17,15 @@ class Program
 			{
 				if (notas[i][j] == notas[2][2])
 					notas[2][2] = 1;
-				notas[i][j] = 0;
+				else
+					notas[i][j] = 0;
 			}
 		}
 		for (int i = 0; i < notas.Length; i++)
 		{
 			for (int j = 0; j < notas[i].Length; j++)
 			{
-				Console.Write(" {0}", notas[i][j]);
+				Console.Write("{0} ", notas[i][j]);
 			}
 			Console.WriteLine();
 		}
