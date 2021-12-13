@@ -15,7 +15,7 @@ class Int
 		}
 		finally
 		{
-			Console.Write("{0} / {1} = {2}", a, b, result);
+			Console.WriteLine("{0} / {1} = {2}", a, b, result);
 
 		}
 	}
