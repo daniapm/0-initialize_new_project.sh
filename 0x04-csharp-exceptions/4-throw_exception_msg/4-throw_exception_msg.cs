@@ -2,7 +2,7 @@
 
 class Except
 {
-	public static void Throw(string msg)
+	public static void ThrowMsg(string msg)
 	{
 		throw new Exception(msg);
 	}
