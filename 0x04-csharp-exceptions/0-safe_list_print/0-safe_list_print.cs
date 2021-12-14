@@ -5,7 +5,7 @@ class List
 {
 	public static int SafePrint(List<int> myList, int n)
 	{
-		for (int i = 1; i < n + 1; i++)
+		for (int i = 1; i < n; i++)
 		{
 			try
 			{
@@ -14,9 +14,9 @@ class List
 			}
 			catch
 			{
-				System.Console.WriteLine("no se pudo");
+				return i;
 			}
-			return n;
+			return i;
 		}
 
 
