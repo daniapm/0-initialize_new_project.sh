@@ -5,24 +5,23 @@ class List
 {
 	public static int SafePrint(List<int> myList, int n)
 	{
-		int num = n;
-		try
+		for (int i = 1; i < n + 1; i++)
 		{
-
-			for (int i = 1; i < num + 1; i++)
+			try
 			{
 				System.Console.WriteLine(i);
 
 			}
-
-
+			catch
+			{
+				System.Console.WriteLine("no se pudo");
+			}
+			return n;
 		}
-		catch
-		{
-			System.Console.WriteLine("no se pudo");
-		}
-		return n;
+
 
 	}
 
+
 }
+
