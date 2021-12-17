@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System.Collections.Generic;
 
 namespace MyMath.Tests
 {
@@ -9,9 +10,26 @@ namespace MyMath.Tests
 		public void DebeSerIgual()
 		{
 			List<int> nums = new List<int> { 1, 2, 3, 4, 5, 1, 2 };
-			int result = 5;
 			var valorEsperado = Operations.Max(nums);
-			Assert.AreEqual(result, valorEsperado);
+			Assert.AreEqual(5, valorEsperado);
+		}
+
+		[Test]
+		public void ListNull()
+		{
+			List<int> nums = null;
+
+			int valorEsperado = Operations.Max(nums);
+			Assert.AreEqual(0, valorEsperado);
+		}
+
+		[Test]
+		public void ListEmpy()
+		{
+			List<int> nums = new List<int>();
+
+			int valorEsperado = Operations.Max(nums);
+			Assert.AreEqual(0, valorEsperado);
 		}
 	}
 }

@@ -7,13 +7,14 @@ namespace MyMath
 	{
 		public static int Max(List<int> nums)
 		{
-			if (nums.Count == 0)
+			if (nums == null || nums.Count <= 0)
 			{
 				return 0;
-
 			}
+
 			else
 			{
+				nums.Sort();
 				int last = nums[nums.Count - 1];
 				return last;
 			}
