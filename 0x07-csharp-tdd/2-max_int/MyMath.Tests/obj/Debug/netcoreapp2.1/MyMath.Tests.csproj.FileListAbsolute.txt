@@ -1,0 +1,4 @@
+C:\Users\RODOLFO\holbertonschool-csharp\0x07-csharp-tdd\2-max_int\MyMath.Tests\obj\Debug\netcoreapp2.1\MyMath.Tests.csprojAssemblyReference.cache
+C:\Users\RODOLFO\holbertonschool-csharp\0x07-csharp-tdd\2-max_int\MyMath.Tests\obj\Debug\netcoreapp2.1\MyMath.Tests.csproj.CoreCompileInputs.cache
+C:\Users\RODOLFO\holbertonschool-csharp\0x07-csharp-tdd\2-max_int\MyMath.Tests\obj\Debug\netcoreapp2.1\MyMath.Tests.AssemblyInfoInputs.cache
+C:\Users\RODOLFO\holbertonschool-csharp\0x07-csharp-tdd\2-max_int\MyMath.Tests\obj\Debug\netcoreapp2.1\MyMath.Tests.AssemblyInfo.cs
