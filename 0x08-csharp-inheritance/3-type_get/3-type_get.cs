@@ -1,12 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Reflection;
+using System.Globalization;
+using System.Text;
 
 class Obj
 {
     public static void Print(object myObj)
     {
         Type type = myObj.GetType();
-        TypeInfo t = type.GetTupeInfo();
+        TypeInfo t = type.GetTypeInfo();
         IEnumerable<PropertyInfo> pList = t.GetProperties();
         IEnumerable<MethodInfo> mList = t.GetMethods();
 
