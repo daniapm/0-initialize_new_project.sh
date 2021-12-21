@@ -70,16 +70,13 @@ class Square : Rectangle
             }
             else {
                 size = value;
+                Width = size;
+                Height = size;
             }
         }
     }
 
-    public override int Area()
-    {
-        return (size * size);
-    }
-
-    public override string ToString()
+     public override string ToString()
     {
         return string.Format("[Square] {0} / {1}", size, size);
     }
