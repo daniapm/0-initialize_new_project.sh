@@ -70,8 +70,6 @@ class Square : Rectangle
             }
             else {
                 size = value;
-                width = value;
-                height = value;
             }
         }
     }
