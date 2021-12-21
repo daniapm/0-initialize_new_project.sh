@@ -10,7 +10,7 @@ class Shape
 
 class Rectangle : Shape
 {
-    private int wiedth;
+    private int width;
     private int height;
 
     public int Width
