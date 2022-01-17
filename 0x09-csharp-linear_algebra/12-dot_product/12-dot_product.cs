@@ -9,7 +9,7 @@ class VectorMath
         {
             return -1;
         }
-        
+        double result = 0.0;
         for (int i = 0; i < vector1.Length; i++)
         {
             result += (Math.Round(vector1[i] * vector2[i], 2));
