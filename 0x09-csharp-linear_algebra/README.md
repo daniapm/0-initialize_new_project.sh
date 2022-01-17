@@ -1,4 +1,4 @@
-<a href= "url"><img src="https://d32ogoqmya1dw8.cloudfront.net/images/introgeo/justintime/examples/logo.gif" width="900px"></a>
+<a href= "url"><img src="https://d32ogoqmya1dw8.cloudfront.net/images/introgeo/justintime/examples/logo.gif" width="300px"></a>
 
 # 0x02. Unity - Scripting
 
