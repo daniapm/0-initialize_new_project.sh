@@ -13,7 +13,7 @@ class VectorMath
         
         for (int i = 0; i < vector.Length; i++)
         {
-            result[i] = Math.Round(vector1[i] * scalar, 2);
+            result[i] = Math.Round(vector[i] * scalar, 2);
         }
         return result;
     }
