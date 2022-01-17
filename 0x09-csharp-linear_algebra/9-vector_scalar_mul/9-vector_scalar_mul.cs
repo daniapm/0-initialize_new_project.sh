@@ -5,7 +5,7 @@ class VectorMath
 {
     public static double[] Multiply(double[] vector, double scalar)
     {
-        double[] result = new double[vector1.Length];
+        double[] result = new double[vector.Length];
         if (vector.Length < 2 || vector.Length > 3)
         {
             return new double[] {-1};
