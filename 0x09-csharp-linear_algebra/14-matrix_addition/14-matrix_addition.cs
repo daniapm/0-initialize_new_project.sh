@@ -21,18 +21,9 @@ class VectorMath
             for (int j = 1; j < matrix1.GetLength(1); j++)
             {
                 mymatrix[i, j] = Math.Round(matrix1[i,j] + matrix2[i,j], 2);
-                Console.WriteLine(mymatrix[i, j]);
             }
         }
         return mymatrix;
     }
 
-    static void Main(string[] args)
-    {
-        double[,] myvector1 = new double[2, 3] { { 10, 5, 100 }, { 50, 75, 25 } };
-        double[,] myvector2 = new double[2, 3] { { 7, 3, 5 }, { 4, 7, 5 } };
-        VectorMath.Add(myvector1, myvector2);
-
-        Console.WriteLine(Add(myvector1, myvector2));
-    }
 }
