@@ -16,9 +16,9 @@ class MatrixMath
             return new double [,] {{-1}};
         }
 
-        for (int i = 1; i < matrix1.GetLength(0); i++)
+        for (int i = 0; i < matrix1.GetLength(0); i++)
         {
-            for (int j = 1; j < matrix2.GetLength(1); j++)
+            for (int j = 0; j < matrix2.GetLength(1); j++)
             {
                 mymatrix[i, j] = Math.Round(matrix1[i,j] + matrix2[i,j], 2);
             }
