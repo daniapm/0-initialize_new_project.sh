@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class VectorMath
+class MatrixMath
 {
     public static double[,] Add(double[,] matrix1, double[,] matrix2)
     {
