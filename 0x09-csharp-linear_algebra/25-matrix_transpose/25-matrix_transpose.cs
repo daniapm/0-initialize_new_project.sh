@@ -7,9 +7,9 @@ class MatrixMath
     {
         double[,] mymatrix = new double[matrix.GetLength(1), matrix.GetLength(0)];
 
-        if (matrix.GetLength(0) == null || matrix.GetLength(1) == null)
+        if (matrix.GetLength(0) == 0 || matrix.GetLength(1) == 0)
         {
-            return new double [,] {{-1}};
+            return new double [,] {{}};
         }
 
         for (int i = 0; i < matrix.GetLength(1); i++)
