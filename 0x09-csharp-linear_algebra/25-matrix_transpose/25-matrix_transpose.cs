@@ -9,7 +9,7 @@ class MatrixMath
 
         if (matrix.GetLength(0) == 0 || matrix.GetLength(1) == 0)
         {
-            return new double [,] {{}};
+            return new double [,];
         }
 
         for (int i = 0; i < matrix.GetLength(1); i++)
