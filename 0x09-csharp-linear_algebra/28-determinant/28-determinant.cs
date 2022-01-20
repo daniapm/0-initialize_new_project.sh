@@ -15,7 +15,7 @@ class MatrixMath
         }
         else if (file == 2 && colum == 2)
         {
-            det = Math.Round((matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]));
+            det = Math.Round((matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]), 2);
             return(det);
         }
         else if (file == 3 && colum == 3)
