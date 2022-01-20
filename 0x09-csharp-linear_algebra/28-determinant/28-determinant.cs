@@ -6,7 +6,7 @@ class MatrixMath
     public static double Determinant(double[,] matrix)
     {
         int file = GetLength(0);
-        int colum = GetLength(0);
+        int colum = GetLength(1);
 
         if (matrix.file < 2|| matrix.file > 3
         || matrix.colum < 2|| matrix.colum > 3)
