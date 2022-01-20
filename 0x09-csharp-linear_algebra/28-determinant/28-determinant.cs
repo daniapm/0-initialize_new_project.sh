@@ -8,8 +8,9 @@ class MatrixMath
         int file = matrix.GetLength(0);
         int colum = matrix.GetLength(1);
 
+        
         double det = 0;
-
+        
         if (file == 2 && colum == 2)
         {
             det = Math.Round((matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]), 2);
