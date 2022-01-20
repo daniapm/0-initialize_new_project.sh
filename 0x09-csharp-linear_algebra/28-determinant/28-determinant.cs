@@ -5,16 +5,23 @@ class MatrixMath
 {
     public static double Determinant(double[,] matrix)
     {
-        if (matrix.GetLength(0) < 2|| matrix.GetLength(0) > 3
-        || matrix.GetLength(1) < 2|| matrix.GetLength(1) > 3)
+        int file = GetLength(0);
+        int colum = GetLength(0);
+
+        if (matrix.file < 2|| matrix.file > 3
+        || matrix.colum < 2|| matrix.colum > 3)
         {
             return -1;
         }
-
-        for (int i = 0; i < matrix.GetLength(0); i++)
+        else if (matrix.file == 2 && matrix.colum == 2)
         {
-            det = det + (matrix[0,i]*(matrix[1,(i+1)%3]*matrix[2,(i+2)%3] - matrix[1,(i+2)%3]*matrix[2,(i+1)%3]));
+            det = Math.Round((matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]));
+            return(det);
         }
-        return det;
+        else if (matrix.file == 3 && matrix.colum == 3)
+        {
+            det = Math.Round((matrix[0, 0] * ((matrix[1, 1] * matrix[2, 2]) - (matrix[1, 2] * matrix[2, 1]))) - (matrix[0, 1] * ((matrix[1, 0] * matrix[2, 2]) - (matrix[1, 2] * matrix[2, 0]))) + (matrix[0, 2] * ((matrix[1, 0] * matrix[2, 1]) - (matrix[1, 1] * matrix[2, 0]))), 2);
+            return(det);
+        }
     }
 }
