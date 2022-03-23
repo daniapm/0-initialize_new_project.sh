@@ -59,6 +59,11 @@ class Decoration : Base, IInteractive, IBreakable {
         set;
     }
 
+    public int durability {
+        get;
+        set;
+    }
+    
     public Decoration(string name="Decoration", int durability=1, bool isQuestItem=false)
     {
         if (durability > 0)
