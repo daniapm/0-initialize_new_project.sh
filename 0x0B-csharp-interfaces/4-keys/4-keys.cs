@@ -108,6 +108,11 @@ class Decoration : Base, IInteractive, IBreakable {
 
 class Key : Base, ICollectable {
 
+    public bool isCollected {
+        get;
+        set;
+    }
+
     public Key(string name="Key", bool isCollected=false) {
         this.name = name;
         this.isCollected = isCollected;
