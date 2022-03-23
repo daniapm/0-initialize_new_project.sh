@@ -63,7 +63,7 @@ class Decoration : Base, IInteractive, IBreakable {
         get;
         set;
     }
-    
+
     public Decoration(string name="Decoration", int durability=1, bool isQuestItem=false)
     {
         if (durability > 0)
@@ -81,10 +81,10 @@ class Decoration : Base, IInteractive, IBreakable {
         if (durability <= 0) {
             Console.WriteLine($"The {this.name} has been broken.");
         }
-        else if(isQuestItem is true) {
+        else if(isQuestItem == true) {
             Console.WriteLine($"You look at the {this.name}. There's a key inside.");
         }
-        else if (isQuestItem is false) {
+        else if (isQuestItem == false) {
             Console.WriteLine($"You look at the {this.name}. Not much to see here.");
         }
         
