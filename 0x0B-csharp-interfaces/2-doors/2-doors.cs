@@ -47,7 +47,7 @@ class Door : Base, IInteractive {
         Console.WriteLine($"You try to open the {this.name}. It's locked.");
     }
 
-    public string name(string name="Door") {
+    public Door(string name="Door") {
         this.name = name;
     }
 }
