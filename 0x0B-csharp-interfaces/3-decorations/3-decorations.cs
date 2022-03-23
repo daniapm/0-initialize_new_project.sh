@@ -78,7 +78,7 @@ class Decoration : Base, IInteractive, IBreakable {
 
     public void Interact()
     {
-        if (durability <= 0) {
+        if (this.durability <= 0) {
             Console.WriteLine($"The {this.name} has been broken.");
         }
         else if(isQuestItem == true) {
