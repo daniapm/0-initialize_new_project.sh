@@ -66,10 +66,11 @@ class Decoration : Base, IInteractive, IBreakable {
 
     public Decoration(string name="Decoration", int durability=1, bool isQuestItem=false)
     {
-        if (durability > 0)
+        if (durability > 0) {
             this.durability = durability;
             this.name = name;
             this.isQuestItem = isQuestItem;
+        }
         else
         {
             throw new Exception("Durability must be greater than 0");
