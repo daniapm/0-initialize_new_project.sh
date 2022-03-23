@@ -66,14 +66,14 @@ class Decoration : Base, IInteractive, IBreakable {
 
     public Decoration(string name="Decoration", int durability=1, bool isQuestItem=false)
     {
-        if (durability > 0) {
-            this.durability = durability;
-            this.name = name;
-            this.isQuestItem = isQuestItem;
+        if (durability <= 0) {
+            throw new Exception("Durability must be greater than 0");
         }
         else
         {
-            throw new Exception("Durability must be greater than 0");
+            this.durability = durability;
+            this.name = name;
+            this.isQuestItem = isQuestItem;
         }
     }
 
@@ -82,11 +82,14 @@ class Decoration : Base, IInteractive, IBreakable {
         if (this.durability <= 0) {
             Console.WriteLine($"The {this.name} has been broken.");
         }
-        else if(isQuestItem == true) {
-            Console.WriteLine($"You look at the {this.name}. There's a key inside.");
-        }
-        else if (isQuestItem == false) {
-            Console.WriteLine($"You look at the {this.name}. Not much to see here.");
+        else
+        {
+            if(isQuestItem == true) {
+                Console.WriteLine($"You look at the {this.name}. There's a key inside.");
+            }
+            else {
+                Console.WriteLine($"You look at the {this.name}. Not much to see here.");
+            }
         }
         
     }
