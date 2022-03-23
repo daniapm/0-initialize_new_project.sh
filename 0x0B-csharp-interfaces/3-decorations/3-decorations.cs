@@ -54,7 +54,7 @@ class Door : Base, IInteractive {
 
 class Decoration : Base, IInteractive, IBreakable {
 
-    public void isQuestItem {
+    public bool isQuestItem {
         get;
         set;
     }
