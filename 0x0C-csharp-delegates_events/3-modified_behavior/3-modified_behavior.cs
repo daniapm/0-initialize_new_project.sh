@@ -62,23 +62,22 @@ class Player
             }
         }
 
-    public float ApplyModifier(float baseValue, Modifier modifier) {
-        if (modifier == Modifier.Weak) {
+    public float ApplyModifier(float baseValue, Modifier modifier)
+    {
+        if (modifier == Modifier.Weak)
             return baseValue * 0.5f;
-        }
-        else if (modifier == Modifier.Base) {
+        else if (modifier == Modifier.Base)
             return baseValue;
-        }
-        else {
+        else
             return baseValue * 1.5f;
-        }
     }
 }
 
-enum Modifier {
+enum Modifier
+{
     Weak,
     Base,
     Strong
 }
 
-public delegate float CalculateModifier(float baseValue, Modifier modifier);
+delegate float CalculateModifier(float baseValue, Modifier modifier);
