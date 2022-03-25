@@ -101,7 +101,7 @@ class Player
             else {
                 this.hp = newHp;
             }
-            OnCheckStatus(this, new CurrentHPArgs(this.hp));
+            OnCheckStatus(new CurrentHPArgs(this.hp));
         }
 
     public float ApplyModifier(float baseValue, Modifier modifier)
