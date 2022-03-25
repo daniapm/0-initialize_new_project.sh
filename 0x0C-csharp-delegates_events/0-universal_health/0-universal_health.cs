@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class Player
+class Player
 {
     private string name;
     private float maxHp;
@@ -21,6 +21,6 @@ public class Player
     }
 
     public void PrintHealth() {
-        Console.WriteLine($"{this.name} has {this.hp} / {this.maxHp} health");
+        Console.WriteLine("{0} has {1} / {2} health", this.name, this.hp, this.maxHp);
     }
 }
