@@ -67,7 +67,7 @@ public float ApplyModifier(float baseValue, Modifier modifier) {
     if (modifier == Modifier.Weak) {
         return baseValue * 0.5f;
     }
-    else if (Modifier == Modifier.Base) {
+    else if (modifier == Modifier.Base) {
         return baseValue;
     }
     else {
