@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class Player
 {
-    private String name;
+    private string name;
     private float maxHp;
     private float hp;
 
