@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 
 class Player
 {
@@ -97,6 +98,8 @@ class Player
             return baseValue * 1.5f;
         }    
     }
+
+    public event EventHandler<CurrentHPArgs> HPCheck;
 }
 
 enum Modifier
@@ -109,9 +112,11 @@ enum Modifier
 delegate float CalculateModifier(float baseValue, Modifier modifier);
 
 class CurrentHPArgs : EventArgs {
-    public readonly currentHp;
 
-    public CurrentHPArgs(float newHp) {
+    public readonly float currentHp;
+
+    public CurrentHPArgs(float newHp)
+    {
         this.currentHp = newHp;
     }
 }
