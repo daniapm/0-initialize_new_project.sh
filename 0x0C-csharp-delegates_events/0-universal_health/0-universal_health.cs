@@ -4,8 +4,8 @@ using System.Collections.Generic;
 public class Player
 {
     private String name { get; set; }
-    private String maxHp { get; set; }
-    private String hp { get; set; }
+    private float maxHp { get; set; }
+    private float hp { get; set; }
 
     public Player(string name="Player", float maxHp=100f) {
         
@@ -13,7 +13,7 @@ public class Player
             this.maxHp = maxHp;
         }
         else {
-            Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.")
+            Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
             this.maxHp = 100f;
             
         }
