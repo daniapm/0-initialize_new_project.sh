@@ -60,7 +60,7 @@ class Queue<T>
 		}
 	}
 
-    public Peek() {
+    public T Peek() {
         if (head == null)
 		{
 			Console.WriteLine("Queue is empty");
