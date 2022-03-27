@@ -1,0 +1,5 @@
+C:\Users\Holberton\holbertonschool-csharp\0x0A-csharp-generics\4-print\obj\Debug\netcoreapp2.1\4-print.csproj.AssemblyReference.cache
+C:\Users\Holberton\holbertonschool-csharp\0x0A-csharp-generics\4-print\obj\Debug\netcoreapp2.1\4-print.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Holberton\holbertonschool-csharp\0x0A-csharp-generics\4-print\obj\Debug\netcoreapp2.1\4-print.AssemblyInfoInputs.cache
+C:\Users\Holberton\holbertonschool-csharp\0x0A-csharp-generics\4-print\obj\Debug\netcoreapp2.1\4-print.AssemblyInfo.cs
+C:\Users\Holberton\holbertonschool-csharp\0x0A-csharp-generics\4-print\obj\Debug\netcoreapp2.1\4-print.csproj.CoreCompileInputs.cache

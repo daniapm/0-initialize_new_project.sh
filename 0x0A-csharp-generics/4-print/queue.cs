@@ -71,7 +71,7 @@ class Queue<T>
         }
     }
 
-    public T Print() {
+    public void Print() {
         if (head == null)
 		{
 			Console.WriteLine("Queue is empty");
