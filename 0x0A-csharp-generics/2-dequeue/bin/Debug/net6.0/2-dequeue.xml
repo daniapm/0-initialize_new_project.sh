@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>2-dequeue</name>
+    </assembly>
+    <members>
+        <member name="T:Queue`1">
+            <summary>Class for que opperations</summary>
+             <typeparam name="T">param type</typeparam>
+        </member>
+        <member name="M:Queue`1.CheckType">
+            <summary>Check if its a queue type</summary>
+            <return>returns a Queue type</return>
+        </member>
+        <member name="T:Queue`1.Node">
+            <summary>Class Node inside queue class</summary>
+        </member>
+        <member name="M:Queue`1.Enqueue(`0)">
+            <summary>Add new node at the end</summary>
+        </member>
+        <member name="M:Queue`1.Count">
+            <summary>Add new node at the end</summary>
+        </member>
+        <member name="M:Queue`1.Dequeue">
+            <summary>Add deleting the last node</summary>
+        </member>
+    </members>
+</doc>

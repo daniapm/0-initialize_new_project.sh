@@ -49,7 +49,6 @@ class Queue<T>
 		if (head == null)
 		{
 			Console.WriteLine("Queue is empty");
-
 			return default(T);
 		}
 		else
@@ -57,7 +56,6 @@ class Queue<T>
 			tail.value = head.value;
 			head = head.next;
 			count--;
-
 			return tail.value;
 		}
 	}

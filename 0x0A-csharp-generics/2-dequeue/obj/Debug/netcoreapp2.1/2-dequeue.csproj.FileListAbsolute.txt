@@ -1,0 +1,5 @@
+C:\Users\Holberton\holbertonschool-csharp\0x0A-csharp-generics\2-dequeue\obj\Debug\netcoreapp2.1\2-dequeue.csproj.AssemblyReference.cache
+C:\Users\Holberton\holbertonschool-csharp\0x0A-csharp-generics\2-dequeue\obj\Debug\netcoreapp2.1\2-dequeue.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Holberton\holbertonschool-csharp\0x0A-csharp-generics\2-dequeue\obj\Debug\netcoreapp2.1\2-dequeue.AssemblyInfoInputs.cache
+C:\Users\Holberton\holbertonschool-csharp\0x0A-csharp-generics\2-dequeue\obj\Debug\netcoreapp2.1\2-dequeue.AssemblyInfo.cs
+C:\Users\Holberton\holbertonschool-csharp\0x0A-csharp-generics\2-dequeue\obj\Debug\netcoreapp2.1\2-dequeue.csproj.CoreCompileInputs.cache
