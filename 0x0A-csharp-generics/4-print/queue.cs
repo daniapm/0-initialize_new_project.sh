@@ -76,11 +76,13 @@ class Queue<T>
 		{
 			Console.WriteLine("Queue is empty");
         }
+        else {
         tail = head;
         while(tail != null)
         {
 			Console.WriteLine(tail.value);
             tail = tail.next;
+        }
         }
     }
 }
