@@ -86,7 +86,7 @@ class Queue<T>
         }
     }
 
-    public void Concatenate() {
+    public string Concatenate() {
         if (head == null)
 		{
 			Console.WriteLine("Queue is empty");
