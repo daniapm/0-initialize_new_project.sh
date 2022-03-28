@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class Queue<T>
+public class Queue<T>
 {
-    public String CheckType() {
+    public string CheckType() {
         return (typeof(T).ToString());
     }
 }
