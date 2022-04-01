@@ -11,7 +11,7 @@ namespace InventoryLibrary
         private float date_created;
         private float date_updated;
 
-        public BaseClass(string id = null; float date_created = default(Datetime), float date_updated =  default(Datetime))
+        public BaseClass(string id = null, float date_created = default(Datetime), float date_updated =  default(Datetime))
         {
             if (id != null)
                 this.id = id;

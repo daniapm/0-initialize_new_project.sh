@@ -1,0 +1,5 @@
+C:\Users\Holberton\holbertonschool-csharp\0x0D-csharp-text_based_interface\InventoryLibrary\obj\Debug\netcoreapp2.1\InventoryLibrary.csproj.AssemblyReference.cache
+C:\Users\Holberton\holbertonschool-csharp\0x0D-csharp-text_based_interface\InventoryLibrary\obj\Debug\netcoreapp2.1\InventoryLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Holberton\holbertonschool-csharp\0x0D-csharp-text_based_interface\InventoryLibrary\obj\Debug\netcoreapp2.1\InventoryLibrary.AssemblyInfoInputs.cache
+C:\Users\Holberton\holbertonschool-csharp\0x0D-csharp-text_based_interface\InventoryLibrary\obj\Debug\netcoreapp2.1\InventoryLibrary.AssemblyInfo.cs
+C:\Users\Holberton\holbertonschool-csharp\0x0D-csharp-text_based_interface\InventoryLibrary\obj\Debug\netcoreapp2.1\InventoryLibrary.csproj.CoreCompileInputs.cache

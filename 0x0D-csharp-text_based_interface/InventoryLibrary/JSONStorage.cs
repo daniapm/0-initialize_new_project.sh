@@ -1,20 +1,71 @@
 using System;
+using System.IO;
+using System.Text.Json;
 using System.Collections.Generic;
-
 
 namespace InventoryLibrary
 {
-
-    class JSONStorage
+    public class JSONStorage
     {
-        public Dictionary<ClassName> objects;
+        public Dictionary<string, object> objects = new Dictionary<string, object>();
 
-        public BaseClass(string name = "name"; string description = "Description", float price =  0.0f, List<String> tags = "tags")
+        string filePath = @"./storage/inventory_manager.json";
+
+        public Dictionary<string, object> All()
         {
-            this.name = name;
-		    this.description = description;
-		    this.price = Math.Round(price, 2);
-            this.tags = tags;
+            return (this.objects);
+        }
+
+        public void New(string nameClass)
+        {
+            if (nameClass == "item")
+            {
+                Item newItem = new Item();
+                objects.Add(nameClass + "." + newItem.id, newItem);
+            }
+            else if (nameClass == "user")
+            {
+                User newUser = new User();
+                objects.Add(nameClass + "." + newUser.id, newUser);
+            }
+            else
+            {
+                Inventory newInv = new Inventory();
+                objects.Add(nameClass + "." + newInv.id, newInv);
+            }
+        }
+
+
+        public void Save()
+        {
+            var options = new JsonSerializerOptions
+            {
+                IgnoreNullValues = true,
+            };
+
+            string jsonString = JsonSerializer.Serialize<Dictionary<string, object>>(objects, options);
+
+            using (StreamWriter sw = File.CreateText(filePath))
+            {
+                sw.WriteLine(jsonString);
+            }
+        }
+        
+        public void Load()
+        {
+            string jsonString = "{}";
+            try
+            {
+                using (StreamReader sw = File.OpenText(filePath))
+                {
+                    jsonString = File.ReadAllText(filePath);
+                }
+                objects = JsonSerializer.Deserialize<Dictionary<string, object>>(jsonString);
+            }
+            catch (JsonException)
+            {
+                Console.WriteLine("JSON File does not contain info");
+            }
         }
     }
 }

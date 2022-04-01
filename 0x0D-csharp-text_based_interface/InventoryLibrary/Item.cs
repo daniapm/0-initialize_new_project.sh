@@ -12,7 +12,7 @@ namespace InventoryLibrary
         private float price;
         public List<String> tags;
 
-        public BaseClass(string name = "name"; string description = "Description", float price =  0.0f, List<String> tags = "tags")
+        public BaseClass(string name = "name", string description = "Description", float price =  0.0f, List<String> tags = "tags")
         {
             this.name = name;
 		    this.description = description;
